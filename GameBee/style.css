@@ -8,7 +8,6 @@ body {
   margin-left: 0%;
   margin-bottom: 0%;
 }
-
 .navbar {
   background-color:  #FAA916;
   width: 100%;
@@ -58,6 +57,7 @@ body {
   margin-right:20px;
   margin-top: 10px;
   z-index: 1;
+
 }
 .navbar .login-menu {
   background-color: #6B2B06;
@@ -81,6 +81,25 @@ body {
 }
 .navbar .login-menu:hover ~ .navbar-button{
  }
+.navbar .login-menu .fancy-button{
+  background-color:#141414;
+  margin: 0 auto;
+  width: 100%;
+  height:60px;
+
+  border-radius:0px;
+  border-style:none;
+}
+.navbar .login-menu .fancy-button:first-of-type{
+  margin-top:28px;
+}
+.navbar .login-menu .fancy-button:hover {
+  background-color: #FAA916;
+  -webkit-transition : all 0.4s ease-in-out ;
+  -moz-transition : all 0.4s ease-in-out ;
+  transition : all 0.4s ease-in-out ;
+
+}
 p {
   color: white;
   font-size: 87.5%;
@@ -89,7 +108,6 @@ p {
   text-align: left;
 
 }
-
 h2 {
   color: #ffffff;
   font-family: 'Montserrat';
@@ -136,12 +154,8 @@ a {
     float: left;
     width: 70%;
 }
-.content{
-  width: 70%;
-  float: left;
- }
 .article-content{
-  background-color: rgb(0,0,0, 0.45);
+
   border-radius: 5px;
   padding: 10px 30px;
   margin: 10px 10px;
@@ -160,7 +174,7 @@ a {
     padding-top: 100px;
     z-index: -1;
 }
-content img {
+.con img {
   float: right;
   margin-top:-20px;
 }
@@ -175,7 +189,14 @@ content img {
       float: left;
       width: 50%;
   }
+  .navbar .navbar-button {
+  display:none;
+
+  }
+
 }
+
+
 @media screen and (max-width: 768px) {
     .column-right {
       width: 100%;
@@ -191,7 +212,6 @@ content img {
         width: 100%;
     }
   }
-
 .nav-link {
   font-weight: bold;
   font-size: 28px;
@@ -230,6 +250,7 @@ content img {
     height:120px;
   }
 }
+
 /* Footer */
 
 .mainFooter{
@@ -241,12 +262,42 @@ content img {
   background-color: black;
   opacity: 0.9
 }
-
 .mainFooter p{
   text-align: center;
   color : white;
 }
 
+/* Social */
+
+.social {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  font-size:40px;
+  color: #FFCA00;
+}
+.social-fb {
+  padding: 0 5px;
+  margin-left: 80px;
+  margin-top: -2px;
+  cursor: pointer;
+  display: block;
+
+}
+.social-fb:after {
+  position: relative;
+  font-family: FontAwesome;
+  content:'\f082';
+}
+.social-fb.checked ~ .social-fb:after,
+.social-fb.checked:after {
+  content:'\f082';
+}
+.social:hover .social-fb:after {content:'\f09a';}
+.social-fb:hover ~ .social-fb:after,
+.social-fb:hover:after {
+  content:'\f09a' !important;
+}
 
 /* Rating */
 

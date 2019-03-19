@@ -8,22 +8,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="chat.css">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <script src=".\anime.min.js"></script> -->
-
 </head>
 <body>
   <nav class="navbar">
     <div class="avatar">
-      <img src="avatar.png" alt="Account" width="100%">
+      <img src="avatar.png" alt="Account" style="width:100%;">
      </div>
      <div class="login-menu">
+       <h2 style="margin-left:80px;">Utilizator</h2>
+       <button onclick="location.href ='./Login.html'" class="fancy-button">
+           LOGIN
+       </button>
+       <button onclick="" class="fancy-button">
+           LOG OUT
+       </button>
+       <button onclick="location.href ='./Register.html'" class="fancy-button">
+           REGISTER
+       </button>
+       <button onclick="location.href ='./Account.html'" class="fancy-button">
+           Account info
+       </button>
+       <h2 style="margin-left:20px; font-size:10px;">Or connect with:</h2>
+       <div class="social">
+         <span class="social-fb" ></span>
+         <span class="social-git" ></span>
+         <span class="social-tw" ></span>
+       </div>
      </div>
     <div class="navbar-logo">
-      <?xml version="1.0" encoding="utf-8"?>
-      <!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
       <svg class="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       viewBox="0 0 260.31 104.74" style="enable-background:new 0 0 260.31 104.74;" xml:space="preserve">
       <style type="text/css">
@@ -364,24 +382,24 @@
      </svg>
     </div>
     <div class="navbar-button">
-        <a class="active nav-link nav-link-ltr" href="Create.html">Home</a>
+        <a class="active nav-link nav-link-ltr" href="index.html">Home</a>
     </div>
     <div class="navbar-button">
-        <a class="active nav-link nav-link-ltr" href="Create.html">Make</a>
+        <a class="active nav-link nav-link-ltr" href="Make.html">Make</a>
     </div>
   </nav>
-<div class="wrapper">
+ <div class="wrapper">
       <div class="row">
           <div class="column-left">
 
            <article class="article-content">
               <h2>Hot Games</h2>
               <ul>
-                  <li><a class="link-hover" href="#">Fortnite</a></li>
-                  <li><a class="link-hover" href="#">Apex Legends</a></li>
-                  <li><a class="link-hover" href="#">PUBG</a></li>
-                  <li><a class="link-hover" href="#">FIFA 19</a></li>
-                  <li><a class="link-hover" href="#">Red dead 2</a></li>
+                  <li><a class="link-hover" href="./Create.html">Fortnite</a></li>
+                  <li><a class="link-hover" href="./Create.html">Apex Legends</a></li>
+                  <li><a class="link-hover" href="./Create.html">PUBG</a></li>
+                  <li><a class="link-hover" href="./Create.html">FIFA 19</a></li>
+                  <li><a class="link-hover" href="./Create.html">Red dead 2</a></li>
 
               </ul>
            </article>
@@ -394,6 +412,59 @@
                   <li><a class="link-hover" href="#">GTA 5</a></li>
               </ul>
            </article>
+           <div class="chatbox">
+             <header>
+               <h6>Live Chat</h6>
+             </header>
+
+             <section>
+               <div class="scroll">
+                 <div class="message-chatbox in">
+                   <div class="message-box">
+                     What pack to buy in FIFA 19?
+                   </div>
+                   <span class="ago">8:30 pm.</span>
+                 </div>
+                 <div class="message-chatbox in">
+                   <div class="message-box">
+                     Prime Gold Players Pack are the best packs,man
+                   </div>
+                   <span class="ago">8:31 pm.</span>
+                 </div>
+                 <div class="message-chatbox out">
+                   <div class="message-box">
+                     Yeah, I got TOTY Mbappe!!
+                   </div>
+                   <span class="ago">9:00 am.</span>
+                 </div>
+                 <div class="message-chatbox in">
+                   <div class="message-box">
+                     I wasnt that lucky as you ,mate. Got 77 Chupo Mothing
+                   </div>
+                   <span class="ago">9:10 am.</span>
+                 </div>
+                 <div class="message-chatbox in">
+                   <div class="message-box">
+                     Got 88 Aubameyang , his shoot is BEAST FIREFIREFIRE
+                   </div>
+                   <span class="ago">9:10 pm.</span>
+                 </div>
+                 <div class="message-chatbox out">
+                   <div class="message-box">
+                     RONALDO 99 Here guys. But not with the prime packs, but the Ultimate packs.They are expensive too!
+                   </div>
+                   <span class="ago">9:16 pm.</span>
+                 </div>
+
+               </div>
+             </section>
+
+             <footer>
+               <div>
+                 <input type="text" class="search">
+               </div>
+             </footer>
+           </div>
 
           </div>
           <div class="column-right">
@@ -402,7 +473,7 @@
               <header>
                   <h2>Fortnite</h2>
               </header>
-              <content>
+              <div class="con">
                   <p>
                      Fortnite Battle Royale, a free-to-play battle royale game where up
                       to 100 players fight to be the last person standing, and Fortnite Creative,
@@ -410,14 +481,14 @@
                         The first two game modes were released in 2017 as early access titles and Creative was
                          released on December 6, 2018.
                   </p>
-                  <img src="Fortnite.jpg" alt="Fortnite-image" width="20%">
-              </content>
+                  <img src="Fortnite.jpg" alt="Fortnite-image" style="width:20%;">
+              </div>
 
               <footer>
                   <p class="post-info">Game owned and created by Epic Games</p>
               </footer>
 
-              <button onclick="location.href ='./Chestionar.html'" class="fancy-button">
+              <button onclick="location.href ='./Create.html'" class="fancy-button">
                   Create REVIEW
               </button>
 
@@ -434,21 +505,21 @@
               <header>
                   <h2>FIFA 19</h2>
               </header>
-              <content>
+              <div class="con">
                   <p>
                     FIFA 19 is a football simulation video game developed by
                        EA Vancouver as part of Electronic Arts' FIFA series.
                       Announced on 6 June 2018 for its E3 2018 press conference,
                       it was released on 28 September 2018
                   </p>
-                  <img src="Fifa.jpg" alt="Fortnite-image" width="20%">
-              </content>
+                  <img src="Fifa.jpg" alt="Fortnite-image" style="width:20%;">
+              </div>
 
               <footer>
                   <p class="post-info">Game owned and created by EA Sports</p>
               </footer>
 
-              <button onclick="location.href ='./create.html'" class="fancy-button">
+              <button onclick="location.href='./Create.html'" class="fancy-button">
                   Create REVIEW
               </button>
 
@@ -467,11 +538,8 @@
       </div>
   </div>
 
-<footer class="mainFooter">
 
-  <p>Copyright © 2019 GameBee. All Rights Reserved.</p>
 
-</footer>
 
 </body>
 

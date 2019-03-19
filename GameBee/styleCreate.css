@@ -367,6 +367,11 @@ a {
   color: #ffffff;
 
 }
+.comment .rating {
+  color: #ffffff;
+  float:right;
+  margin-top:-20px;
+}
 .comment p {
 	margin: 0.5rem 0.5rem 0.5rem 2rem;
 }
