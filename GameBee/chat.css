@@ -11,9 +11,32 @@
   display: flex;
   flex-direction: column;
   position:fixed;
-  left:0;
-  bottom:0;
+  left:-20px;
+  bottom:-280px;
+  -webkit-transition: bottom 1.2s;
+  transition: bottom 1.2s;
+ 
 }
+.chatbox:hover {
+bottom:-20px;
+}
+@media screen and (max-width: 700px) {
+  .chatbox {
+    z-index:1;
+    width:100%;
+    
+  }
+  .chatbox:hover {
+    width:100%;
+    }
+}
+@media screen and (max-width: 1700px) {
+  .chatbox {
+    z-index:1;
+  }
+  
+}
+
 
 .chatbox header, .chatbox section, .chatbox footer {
   width: 100%;

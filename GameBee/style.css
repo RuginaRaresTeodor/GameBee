@@ -33,11 +33,11 @@ body {
   margin-right:20%;
 }
 .navbar .navbar-button {
-  background-color: #F7F7F2;
+  
   height: 61px;
-  width: 184px;
-  margin-left: 10px;
-  margin-top: 19px;
+  width: 100px;
+  margin-left: 0px;
+  margin-top: 13px;
   float: right;
   -webkit-border-top-left-radius: 10px;
   -webkit-border-top-right-radius: 10px;
@@ -57,6 +57,7 @@ body {
   margin-right:20px;
   margin-top: 10px;
   z-index: 1;
+  
 
 }
 .navbar .login-menu {
@@ -69,12 +70,13 @@ body {
   z-index: -1;
   border-radius: 10px 30px 10px 10px;
   display: none;
-  -webkit-transition:  2s;
+  -webkit-transition: width  2s;
   transition: width 2s;
+
 }
 .navbar .avatar:hover + .login-menu, .login-menu:hover{
   display: inline-block;
-
+  width:300px;
 }
 .navbar .avatar:hover ~ .navbar-button{
 
@@ -183,6 +185,7 @@ a {
       float: left;
       width: 60%;
   }
+  
 }
 @media screen and (max-width: 900px) {
   .column-right {
@@ -190,10 +193,20 @@ a {
       width: 50%;
   }
   .navbar .navbar-button {
-  display:none;
-
+  float:left;
+  margin-right:2%;
   }
-
+  .navbar .navbar-button:nth-last-of-type(1n+2) {
+    margin-right:2%;
+  }
+  
+  .column-left .article-content {
+      float:right;
+    }
+    .navbar .avatar:hover ~ .navbar-button{
+      display: none;
+    
+    }
 }
 
 
@@ -203,6 +216,10 @@ a {
     }
     .column-left {
       width: 100%;
+      margin-left:-40px;
+    }
+    .column-left .article-content {
+      float:right;
     }
     .wrapper {
       width: 100%;
@@ -210,6 +227,10 @@ a {
     }
     .column {
         width: 100%;
+    }
+    .navbar .avatar:hover ~ .navbar-button{
+      display: none;
+    
     }
   }
 .nav-link {
@@ -351,4 +372,27 @@ a {
   -moz-transition : all 0.4s ease-in-out ;
   transition : all 0.4s ease-in-out ;
 
+}
+.export1
+{
+  position:absolute;
+  margin-left:0;
+  margin-top:35%;
+  
+  padding:5px;
+}
+.export2
+{
+  position:absolute;
+  margin-left:0;
+  margin-top:28%;
+  
+  padding:5px;
+}
+@media screen and (max-width: 1000px) {
+  
+  .navbar .avatar:hover ~ .navbar-button{
+    display: none;
+  
+  }
 }

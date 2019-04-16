@@ -32,22 +32,7 @@ body {
 .navbar .navbar-button:nth-last-of-type(1n+2) {
   margin-right:20%;
 }
-.navbar .navbar-button {
-  background-color: #F7F7F2;
-  height: 61px;
-  width: 184px;
-  margin-left: 10px;
-  margin-top: 19px;
-  float: right;
-  -webkit-border-top-left-radius: 10px;
-  -webkit-border-top-right-radius: 10px;
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-topright: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-color: #141414;
 
-}
 .navbar .avatar {
   background-color: white;
   height: 58px;
@@ -189,6 +174,17 @@ a {
       float: left;
       width: 50%;
   }
+  .navbar .navbar-button {
+    float:left;
+    margin-right:2%;
+    }
+    .navbar .navbar-button:nth-last-of-type(1n+2) {
+      margin-right:2%;
+    }
+    .navbar .avatar:hover ~ .navbar-button{
+      display: none;
+    
+    }
 }
 @media screen and (max-width: 768px) {
     .column-right {
@@ -203,6 +199,10 @@ a {
     }
     .column {
         width: 100%;
+    }
+    .navbar .avatar:hover ~ .navbar-button{
+      display: none;
+    
     }
   }
 .nav-link {
@@ -399,4 +399,27 @@ a {
 }
 .my-logo .fancy-button {
   margin-left:20px;
+}
+.navbar .navbar-button {
+  
+  height: 61px;
+  width: 100px;
+  margin-left: 0px;
+  margin-top: 13px;
+  float: right;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-color: #141414;
+
+}
+@media screen and (max-width: 1000px) {
+  
+  .navbar .avatar:hover ~ .navbar-button{
+    display: none;
+  
+  }
 }
