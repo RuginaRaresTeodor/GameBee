@@ -427,12 +427,13 @@
     color:blue;
   }
   .category-games .game {
-    width: 200px;
+    width: 100px;
     flex-shrink: 0;
-    height: 100%;
+    height: 80%;
     background-color: #000000;
     overflow-x: auto;
     margin-left: 4px;
+    margin-top:20px;
   }
   
   @media screen and (max-width: 1000px) {
